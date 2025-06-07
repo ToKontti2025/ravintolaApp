@@ -1,7 +1,7 @@
 package com.example.ravintolaapp.data
 
 import com.example.ravintolaapp.data.dto.RestaurantWithAvgRatingDto
-import com.example.ravintolaapp.data.dto.RestaurantDto
+import com.example.ravintolaapp.data.dto.RatingDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 
@@ -15,5 +15,5 @@ interface RestaurantApiService {
     @GET("/api/restaurants/{resid}/ratings")
     suspend fun getRatingsForRestaurant(
         @Path("resid") restaurantId: Int
-    ): List<RestaurantDto>
+    ): List<RatingDto>
 }
