@@ -1,15 +1,42 @@
+# Gradle valimuistit ja rakennuskansiot
+.gradle/
+**/build/
+**/out/
+**/libs/
+
+# Android Studio/IntelliJ IDEA -projektitiedostot
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+*.iws
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Virtuaaliymparisto (Python backend)
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Android APK ja valiaikaistiedostot
+*.apk
+*.ap_
+*.keystore
+*.jks
+app/build/
+app/.cxx/
+app/.externalNativeBuild/
+
+# Logit ja valiaikaistiedostot
+*.log
+*.tmp
+*.swp
+*.bak
+*.swo
+*.swn
+
+# Gradle wrapper -tiedostot
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# Paikalliset asetukset ja avaintiedostot
 local.properties
