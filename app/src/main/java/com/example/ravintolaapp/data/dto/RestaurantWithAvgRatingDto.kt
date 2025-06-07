@@ -1,6 +1,6 @@
 package com.example.ravintolaapp.data.dto
 
-data class ProductWithAvgRatingDto(
+data class RestaurantWithAvgRatingDto(
 
     val id: Int,
     val name: String,
